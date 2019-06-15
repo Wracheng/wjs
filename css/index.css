@@ -1,0 +1,320 @@
+.header{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.header .phone,.header .tel,.header .question,.header .register{
+    height: 40px;
+    border-right:1px solid #ccc;
+}
+.header .register{
+    border-right:none;
+}
+.header a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    color:#000;
+}
+.header a:hover{
+    color:#e92322;
+    text-decoration: none;
+}
+.header .phone a .wjs_icon_phone{
+    font-style: normal;
+}
+.header .phone a span{
+    margin:0 5px;
+}
+.header .phone .first{
+    position: relative;
+}
+.header .phone .first:hover .ewm{
+    display: block;
+}
+.header .phone .first .ewm{
+    width: 120px;
+    height: 136px;
+    background:url('../images/code.jpg');
+    position: absolute;
+    right: 2px;
+    top: 40px;
+    border-top: 1px solid #ccc;
+    display: none;
+}
+.header .tel{
+    text-align: center;
+    line-height: 40px;
+}
+.header .tel span:nth-child(2){
+    margin-left: 5px;
+}
+.header .question a{
+    display: inline;
+}
+.header .question{
+    text-align: center;
+}
+.header .register{
+    line-height: 40px;
+    text-align: center;
+}
+.header .register .btn-danger{
+    padding:2px 12px;
+}
+.header .register .btn-link{
+    text-decoration: none;
+    color:#000;
+}
+.header .register .btn-link:hover{
+    color:#e92322;
+    text-decoration: none;
+}
+/* --------------------------------------------------------------nav */
+.navb{
+    width: 100%;
+    border-bottom:1px solid #ccc; 
+}
+.navb .navbar{
+    margin-bottom:0 ;
+}
+.navb .navbar-toggle{
+    margin-top: 22px;
+}
+.navbar-default{
+    background-color: transparent;
+    border-color:#fff 
+}
+.navb .container .navbar-nav a{
+    height: 80px;
+    /* 调a的高撑大 */
+    line-height: 50px;
+}
+.navb .container .navbar-brand i{
+    font-style: normal;
+    height: 80px;
+    /* 调a的高撑大 */
+    line-height: 50px;
+    color:#e92322;
+    font-size: 36px;
+}
+.navb .container .navbar-brand{
+    height: 80px;
+    line-height: 50px;
+}
+.navb .container .navbar-brand i:first-child{
+    font-size: 50px;
+    vertical-align: middle;
+}
+.navb .container .navbar-brand i:last-child{
+    color:#000;
+    vertical-align: middle;
+}
+.navb .container .navbar-default .navbar-nav > .active > a, 
+.navb .container .navbar-default .navbar-nav a:hover{
+    background-color: transparent;
+    border-bottom:3px solid #e92322;
+}
+@media (max-width:180px){
+    .navb .container .navbar-brand i:last-child{
+        visibility: hidden;
+    }
+}
+
+/* ------------------------------------------------banner */
+/* 大屏放大图,小屏放小图 */
+@media (min-width:640px){
+    /* bootstrap里面已经有了相对定位属性,轮播图是定位版不是浮动版 */
+.banner .carousel .item{
+    height: 410px;
+    overflow: hidden;
+}
+.banner .carousel-inner .item img{
+    height: 410px;
+    /* 去除img等比例缩放 */
+    max-width: none;
+    /* 让img居中显示 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+
+/* --------------------------------------------------------protect */
+.protect .media .media-left .wjs_icon{
+    font-style: normal;
+    font-size: 30px;
+}
+.protect .media{
+    text-decoration:none;
+    color:#000;
+}
+.protect .media:hover{
+    color:#e92322;
+}
+.protect .container .media{
+    margin-top: 30px;
+}
+/* ---------------------------------------------------------book */
+.book{
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding:30px 0;
+    margin-top: 30px;
+}
+.book .container i{
+    font-style: normal;
+    font-size:20px;
+}
+.book .container .now{
+    border-bottom:1px dashed #e92322;
+    color:#e92322; 
+}
+.book .container a:hover{
+    text-decoration: none;
+    color:#e92322;
+}
+.book .container .pull-right{
+    color:#333;
+}
+.book .container .pull-right span{
+    margin-left: 3px;
+}
+/* ---------------------------------------recommend */
+.recommend{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #ccc;
+    padding:30px 0;
+}
+.recommend .nav li a,
+.recommend .nav li a:link{
+    border: #fff;
+    color:#333;
+}
+.recommend .nav li a:hover{
+    background-color: #fff;
+    color:#e92322;
+    background-color: #F5F5F5;
+}
+.recommend .nav .active{
+    border-bottom:3px solid #e92322;
+}
+.recommend #nav{
+    min-width: 940px;
+}
+.recommend #nav .active a{
+    color:rgb(194, 164, 164);
+    background-color: #F5F5F5;
+}
+
+.recommend .container i{
+    font-style: normal;
+    font-size: 40px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+.tab-content .tab-pane .product_item{
+    height: 150px;
+    margin-top: 20px;
+    background-color: pink;
+}
+.tab-content .tab-pane .product_item.current{
+    background-color: #e92322;
+    color:#fff;
+}
+.tab-content .tab-pane .product_item .product_item_right{
+    position: relative;
+    width: 80px;
+    height: 100%;
+    border-left: 1px dashed blue;
+}
+.tab-content .tab-pane .product_item .product_item_right .top,
+.tab-content .tab-pane .product_item .product_item_right .bottom{
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}
+.tab-content .tab-pane .product_item .product_item_right .top{
+    top: -10px;
+}
+.tab-content .tab-pane .product_item .product_item_right .bottom{
+    bottom: -10px;
+}
+.tab-content .tab-pane .product_item .product_item_right p{
+    font-size:16px;
+}
+.tab-content .tab-pane .product_item .product_item_right p:first-child{
+    margin-top: 34px;
+}
+.tab-content .tab-pane .product_item .product_item_right p:first-child b{
+    font-size: 32px;
+}
+.tab-content .tab-pane .product_item .product_item_left{
+    overflow: hidden;
+}
+.tab-content .tab-pane .product_item .product_item_left h3{
+    font-size: 18px;
+}
+.tab-content .tab-pane .product_item .product_item_left P{
+    margin-bottom: 0; 
+}
+
+/* -----------------------------------------------------------------------news */
+.news{
+    border-bottom:1px solid #ccc;
+}
+.news .container{
+    margin-top: 30px;
+}
+.news .container .nav li.active a{
+    border:none;
+    background-color: #e92322;
+}
+.news .container .nav{
+    border-bottom:none;
+}
+.news .container .nav a{
+    color:#fff;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    font-size:30px;
+    background-color: #ccc;
+    border-radius:50%; 
+    margin:30px auto;
+}
+.news .container .nav a i{
+    font-style:normal;
+}
+.news .container .title{
+    position: relative;
+    border-bottom:1px solid #e92322;
+}
+.news .container .title::after{
+    content:'';
+    display:block;
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    border:1px solid #e92322;
+    position: absolute;
+    bottom: -3px;
+    right: -5px;
+}
+.panes ul{
+    list-style: none;
+}
+.panes ul li{
+    margin-top: 10px;
+}
+/* -----------------------------------------------------------------------partner */
+.partner i{
+    font-style: normal;
+    font-size:60px;
+}
